@@ -18,6 +18,9 @@ var teams = [];
 // Output Data
 var festTeams = ["Spongebob", "Patrick"];
 
+//
+var altData = {"alts":[]};
+
 function cycleTeamCount() {
     if (teamCount == 2 || teamCount == 3)
         teamCount = (teamCount + 1) % 4;
@@ -25,6 +28,17 @@ function cycleTeamCount() {
         teamCount = 2;
 
     document.getElementById("cycleTeamCount").textContent = `team count: ${teamCount == 0 ? "Any" : teamCount}`;
+}
+
+async function fetchFile(file) {
+    if (!file) {
+        console.log("fetchFile() was not given a file!");
+        return null;
+    }
+    const response = await fetch(`./${file}`);
+    const gamejson = await response.json();
+    //console.log(gamejson);
+    return gamejson;
 }
 
 async function fetchTeams(game) {
@@ -44,6 +58,8 @@ async function gatherFests() {
     const s1_data = await fetchTeams("splatoon");
     const s2_data = await fetchTeams("splatoon_2");
     const s3_data = await fetchTeams("splatoon_3");
+    const newAltData = await fetchFile("assets/banner_alts.json");
+    altData = newAltData;   
 
     while (festTeams.length > 0)
         festTeams.pop();
@@ -89,6 +105,13 @@ async function gatherFests() {
     console.log(festTeams);
 }
 
+function genBannerPath(bannerName) {
+    if (!altData["alts"][bannerName])
+        return `./assets/banners/${bannerName}.png`;
+    var variant = Math.round(Math.random() * altData["alts"][bannerName].length);
+    return `./assets/banners/${altData["alts"][bannerName][variant]}.png`;
+}
+
 function generateFest() {
     var _teamcount = teamCount;
     if (_teamcount == 0)
@@ -106,10 +129,10 @@ function generateFest() {
     //document.getElementById("bannerBravo").hidden = false;
     document.getElementById("bannerCharlie").hidden = _teamcount < 3;
 
-    document.getElementById("bannerAlpha").setAttribute("src", `./assets/banners/${teams[0]}.png`);
-    document.getElementById("bannerBravo").setAttribute("src", `./assets/banners/${teams[1]}.png`);
+    document.getElementById("bannerAlpha").setAttribute("src", genBannerPath(teams[0]));
+    document.getElementById("bannerBravo").setAttribute("src", genBannerPath(teams[1]));
     if (_teamcount == 3)
-        document.getElementById("bannerCharlie").setAttribute("src", `./assets/banners/${teams[2]}.png`);
+        document.getElementById("bannerCharlie").setAttribute("src", genBannerPath(teams[2]));
 
     document.getElementById("festname").textContent = _teamcount == 2 ? (`${teams[0]} vs ${teams[1]}`) : (`${teams[0]} vs ${teams[1]} vs ${teams[2]}`);
 }
