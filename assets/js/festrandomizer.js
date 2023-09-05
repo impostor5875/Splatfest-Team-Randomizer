@@ -19,7 +19,31 @@ var teams = [];
 var festTeams = ["Spongebob", "Patrick"];
 
 //
-var altData = {"alts":[]};
+var _langName = "none";
+var langFile = {"name":"None","map":{}};
+function getTranslation(key, fallback) {
+    if (langFile["map"][key]) {
+        console.log(key);
+        return langFile["map"][key];
+    }
+    return fallback;
+}
+function loadDefaultLanguage() {
+    console.log("load is");
+    loadLanguage("en_us");
+}
+async function loadLanguage(langName) {
+    console.log("load it " + langName);
+    const langFileNew = await fetchFile(`./assets/namemap/${langName}.json`);
+    if (!langFileNew) {
+        console.log(`The language file ${langName}.json does not exist.`);
+        return;
+    }
+    _langName = langName;
+    langFile = langFileNew;
+    document.title = `${getTranslation("title", "Splatfest Generator")} - ${langFile["name"]}`;
+    console.log(langFile);
+}
 
 function cycleTeamCount() {
     if (teamCount == 2 || teamCount == 3)
@@ -52,14 +76,20 @@ async function fetchTeams(game) {
     return gamejson;
 }
 
+function snapNum(val, min, max) {
+    if (val < min)
+        return min;
+    if (val > max)
+        return max;
+    return val;
+}
+
 async function gatherFests() {
     console.log("Attempting to gather fests!");
 
     const s1_data = await fetchTeams("splatoon");
     const s2_data = await fetchTeams("splatoon_2");
     const s3_data = await fetchTeams("splatoon_3");
-    const newAltData = await fetchFile("assets/banner_alts.json");
-    altData = newAltData;   
 
     while (festTeams.length > 0)
         festTeams.pop();
@@ -106,10 +136,9 @@ async function gatherFests() {
 }
 
 function genBannerPath(bannerName) {
-    if (!altData["alts"][bannerName])
-        return `./assets/banners/${bannerName}.png`;
-    var variant = Math.round(Math.random() * altData["alts"][bannerName].length);
-    return `./assets/banners/${altData["alts"][bannerName][variant]}.png`;
+    //if (!exist_it(paththththhh))
+    //    return `./assets/banners/undefined.png`;
+    return `./assets/banners/${bannerName}.png`;
 }
 
 function generateFest() {
@@ -122,7 +151,7 @@ function generateFest() {
         teams.pop();
 
     for (var i = 0; i < _teamcount; i++)
-        teams.push(festTeams[Math.round(Math.random() * festTeams.length)]);
+        teams.push(festTeams[Math.round(Math.random() * (festTeams.length - 1))]);
     console.log(teams);
 
     //document.getElementById("bannerAlpha").hidden = false;
@@ -134,5 +163,8 @@ function generateFest() {
     if (_teamcount == 3)
         document.getElementById("bannerCharlie").setAttribute("src", genBannerPath(teams[2]));
 
-    document.getElementById("festname").textContent = _teamcount == 2 ? (`${teams[0]} vs ${teams[1]}`) : (`${teams[0]} vs ${teams[1]} vs ${teams[2]}`);
+    var _teammmm = [];
+    for (var i = 0; i < teams.length; i++)
+        _teammmm.push(getTranslation(`banner.${teams[i]}`, teams[i]));
+    document.getElementById("festname").textContent = _teamcount == 2 ? (`${_teammmm[0]} vs ${_teammmm[1]}`) : (`${_teammmm[0]} vs ${_teammmm[1]} vs ${_teammmm[2]}`);
 }

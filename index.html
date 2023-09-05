@@ -2,10 +2,15 @@
 
 <html>
     <head>
+        <!--title id="pageTitle">Splatfest Randomizer (WIP)</title-->
         <script src="./assets/js/festrandomizer.js" language="javascript" type="text/javascript"></script>
         <script>
-            gatherFests();
-            generateFest();
+            async function callNewStuff() {
+                await loadDefaultLanguage();
+                await gatherFests();
+                await generateFest();
+            }
+            callNewStuff();
         </script>
     </head>
     <body>

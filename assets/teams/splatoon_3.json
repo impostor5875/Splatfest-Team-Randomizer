@@ -5,7 +5,7 @@
     },
     "teams": [
         {
-            "alpha": "Rock",
+            "alpha": "Rock_3",
             "bravo": "Paper",
             "charlie": "Scissors"
         },
@@ -45,9 +45,9 @@
             "charlie": "Mint Chip"
         },
         {
-            "alpha": "Money",
+            "alpha": "Money_3",
             "bravo": "Fame",
-            "charlie": "Love"
+            "charlie": "Love_3"
         },
         {
             "alpha": "Shiver",
