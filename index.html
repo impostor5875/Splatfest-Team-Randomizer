@@ -13,6 +13,51 @@
         splat it festival<br>
         <button type="button" id="cycleTeamCount" value="load" onclick="cycleTeamCount()">team count: 2</button>
         <!--button type="button" id="loadFests" value="load" onclick="gatherFests()">load fests</button-->
-        <button type="button" id="generateFest" value="load" onclick="generateFest()">generate fests</button>
+        <button type="button" id="generateFest" value="load" onclick="generateFest()">generate fests</button><br>
+        
+        <!-- THIS IS A MESS BUT I HATE DOING THIS SO SCREW YOU -->
+        <button type="button" id="s1_us_toggle" value="load" onclick="
+            s1_us = !s1_us;
+            document.getElementById('s1_us_toggle').textContent = `Splatoon 1 (North America): ${s1_us ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 1 (North America): Enabled</button>
+        <button type="button" id="s1_eu_toggle" value="load" onclick="
+            s1_eu = !s1_eu;
+            document.getElementById('s1_eu_toggle').textContent = `Splatoon 1 (Europe & Oceania): ${s1_eu ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 1 (Europe & Oceania): Enabled</button>
+        <button type="button" id="s1_jp_toggle" value="load" onclick="
+            s1_jp = !s1_jp;
+            document.getElementById('s1_jp_toggle').textContent = `Splatoon 1 (Japan): ${s1_jp ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 1 (Japan): Enabled</button><br>
+
+        <button type="button" id="s2_us_toggle" value="load" onclick="
+            s2_us = !s2_us;
+            document.getElementById('s2_us_toggle').textContent = `Splatoon 2 (North America & Oceania): ${s2_us ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 2 (North America & Oceania): Enabled</button>
+        <button type="button" id="s2_eu_toggle" value="load" onclick="
+            s2_eu = !s2_eu;
+            document.getElementById('s2_eu_toggle').textContent = `Splatoon 2 (Europe): ${s2_eu ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 2 (Europe): Enabled</button>
+        <button type="button" id="s2_jp_toggle" value="load" onclick="
+            s2_jp = !s2_jp;
+            document.getElementById('s2_jp_toggle').textContent = `Splatoon 2 (Japan): ${s2_jp ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 2 (Japan): Enabled</button><br>
+
+        <button type="button" id="s3_toggle" value="load" onclick="
+            s3 = !s3;
+            document.getElementById('s3_toggle').textContent = `Splatoon 3: ${s3 ? 'Enabled' : 'Disabled'}`;
+            gatherFests();
+        ">Splatoon 3: Enabled</button><br>
+        <!-- -->
+
+        <a id="festname">Spongebob vs Spongebob vs Spongebob</a>
+        <div id="banner">
+            <image id="bannerAlpha" src="/assets/banners/Spongebob.png" width="25%"></image><image id="bannerBravo" src="/assets/banners/Spongebob.png" width="25%"></image><image id="bannerCharlie" src="/assets/banners/Spongebob.png" width="25%"></image>
+        </div>
     </body>
 </html>

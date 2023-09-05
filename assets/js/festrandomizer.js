@@ -51,6 +51,9 @@ async function gatherFests() {
     if (s1_data && (s1_us || s1_eu || s1_jp)) {
         console.log(`Gathering fests for ${s1_data.name.en_us}! (${s1_data.name.jp_jp})`);
         for (var i = 0; i < s1_data.teams.length; i++) {
+            var allowedForAnyRegion = (s1_us && s1_data.teams[i].na) || (s1_eu && s1_data.teams[i].eu) || (s1_jp && s1_data.teams[i].jp);
+            if (!allowedForAnyRegion)
+                continue;
             if (!festTeams.includes(s1_data.teams[i].alpha))
                 festTeams.push(s1_data.teams[i].alpha);
             if (!festTeams.includes(s1_data.teams[i].bravo))
@@ -61,6 +64,9 @@ async function gatherFests() {
     if (s2_data && (s2_us || s2_eu || s2_jp)) {
         console.log(`Gathering fests for ${s2_data.name.en_us}! (${s2_data.name.jp_jp})`);
         for (var i = 0; i < s2_data.teams.length; i++) {
+            var allowedForAnyRegion = (s2_us && s2_data.teams[i].na) || (s2_eu && s2_data.teams[i].eu) || (s2_jp && s2_data.teams[i].jp);
+            if (!allowedForAnyRegion)
+                continue;
             if (!festTeams.includes(s2_data.teams[i].alpha))
                 festTeams.push(s2_data.teams[i].alpha);
             if (!festTeams.includes(s2_data.teams[i].bravo))
@@ -95,4 +101,15 @@ function generateFest() {
     for (var i = 0; i < _teamcount; i++)
         teams.push(festTeams[Math.round(Math.random() * festTeams.length)]);
     console.log(teams);
+
+    //document.getElementById("bannerAlpha").hidden = false;
+    //document.getElementById("bannerBravo").hidden = false;
+    document.getElementById("bannerCharlie").hidden = _teamcount < 3;
+
+    document.getElementById("bannerAlpha").setAttribute("src", `/assets/banners/${teams[0]}.png`);
+    document.getElementById("bannerBravo").setAttribute("src", `/assets/banners/${teams[1]}.png`);
+    if (_teamcount == 3)
+        document.getElementById("bannerCharlie").setAttribute("src", `/assets/banners/${teams[2]}.png`);
+
+    document.getElementById("festname").textContent = _teamcount == 2 ? (`${teams[0]} vs ${teams[1]}`) : (`${teams[0]} vs ${teams[1]} vs ${teams[2]}`);
 }
