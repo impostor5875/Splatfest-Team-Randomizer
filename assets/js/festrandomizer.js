@@ -106,10 +106,10 @@ function generateFest() {
     //document.getElementById("bannerBravo").hidden = false;
     document.getElementById("bannerCharlie").hidden = _teamcount < 3;
 
-    document.getElementById("bannerAlpha").setAttribute("src", `/assets/banners/${teams[0]}.png`);
-    document.getElementById("bannerBravo").setAttribute("src", `/assets/banners/${teams[1]}.png`);
+    document.getElementById("bannerAlpha").setAttribute("src", `./assets/banners/${teams[0]}.png`);
+    document.getElementById("bannerBravo").setAttribute("src", `./assets/banners/${teams[1]}.png`);
     if (_teamcount == 3)
-        document.getElementById("bannerCharlie").setAttribute("src", `/assets/banners/${teams[2]}.png`);
+        document.getElementById("bannerCharlie").setAttribute("src", `./assets/banners/${teams[2]}.png`);
 
     document.getElementById("festname").textContent = _teamcount == 2 ? (`${teams[0]} vs ${teams[1]}`) : (`${teams[0]} vs ${teams[1]} vs ${teams[2]}`);
 }
