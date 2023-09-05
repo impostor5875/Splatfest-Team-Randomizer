@@ -2,6 +2,8 @@
 Randomizes Splatfest teams for no reason.<br>
 Note: This is heavily WIP. All it can do in it's current state is provide teams, and none of the Splatoon 2 teams are implemented.<br>
 Example below:<br>
+<br>
+<b>Shiver VS Spongebob</b><br>
 ![](./github/shiver%20vs%20spongebob.png)
 
 # Disclaimer
