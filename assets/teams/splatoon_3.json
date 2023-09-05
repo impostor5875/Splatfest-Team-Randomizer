@@ -1,0 +1,58 @@
+{
+    "name": {
+        "en_us": "Splatoon 3",
+        "jp_jp": "スプラトゥーン3"
+    },
+    "teams": [
+        {
+            "alpha": "Rock",
+            "bravo": "Paper",
+            "charlie": "Scissors"
+        },
+        {
+            "alpha": "Gear",
+            "bravo": "Grub",
+            "charlie": "Fun"
+        },
+        {
+            "alpha": "Grass",
+            "bravo": "Fire",
+            "charlie": "Water"
+        },
+        {
+            "alpha": "Spicy",
+            "bravo": "Sweet",
+            "charlie": "Sour"
+        },
+        {
+            "alpha": "Dark Chocolate",
+            "bravo": "Milk Chocolate",
+            "charlie": "White Chocolate"
+        },
+        {
+            "alpha": "Nessie",
+            "bravo": "Aliens",
+            "charlie": "Bigfoot"
+        },
+        {
+            "alpha": "Power",
+            "bravo": "Wisdom",
+            "charlie": "Courage"
+        },
+        {
+            "alpha": "Vanilla",
+            "bravo": "Strawberry",
+            "charlie": "Mint Chip"
+        },
+        {
+            "alpha": "Money",
+            "bravo": "Fame",
+            "charlie": "Love"
+        },
+        {
+            "alpha": "Shiver",
+            "bravo": "Frye",
+            "charlie": "Big Man"
+        }
+    ]
+}

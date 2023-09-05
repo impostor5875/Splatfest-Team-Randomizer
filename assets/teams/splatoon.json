@@ -1,0 +1,302 @@
+{
+    "name": {
+        "en_us": "Splatoon",
+        "jp_jp": "スプラトゥーン"
+    },
+    "teams": [
+        {
+            "alpha": "AWWWWWWW",
+            "bravo": "BWWWWWWW",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Cats",
+            "bravo": "Dogs",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Roller Coasters",
+            "bravo": "Water Slides",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Marshmallows",
+            "bravo": "Hot Dogs",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Autobots",
+            "bravo": "Deceptions",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Art",
+            "bravo": "Science",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Cars",
+            "bravo": "Planes",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Pirates",
+            "bravo": "Ninjas",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Burgers",
+            "bravo": "Pizza",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Naughty",
+            "bravo": "Nice",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Past",
+            "bravo": "Future",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Pokémon Red",
+            "bravo": "Pokémon Blue",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Snowman",
+            "bravo": "Sandcastle",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Spongebob",
+            "bravo": "Patrick",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Fancy Party",
+            "bravo": "Costume Party",
+            "na": true,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Early Bird",
+            "bravo": "Night Owl",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Callie",
+            "bravo": "Marie",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Rock",
+            "bravo": "Pop",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Eating",
+            "bravo": "Sleeping",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "North Pole",
+            "bravo": "South Pole",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Singing",
+            "bravo": "Dancing",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Messy",
+            "bravo": "Tidy",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Zombies",
+            "bravo": "Ghost",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Delicious",
+            "bravo": "Disgusting",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Fit",
+            "bravo": "Rich",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Barbarian",
+            "bravo": "Ninja",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Hoverboard",
+            "bravo": "Jet Pack",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Black Tie Event",
+            "bravo": "Fancy Dress Party",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "World Tour",
+            "bravo": "Space Adventure",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Rice",
+            "bravo": "Bread",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Red Fox",
+            "bravo": "Green Tanuki",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Lemon Tea",
+            "bravo": "Milk Tea",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Grasshopper",
+            "bravo": "Ant",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Boke",
+            "bravo": "Tsukkomi",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Squid",
+            "bravo": "Octopus",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Love",
+            "bravo": "Money",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Mountain Food",
+            "bravo": "Sea Food",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Perfect Body",
+            "bravo": "Perfect Brain",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Pokémon Red",
+            "bravo": "Pokémon Green",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Go all out!",
+            "bravo": "Focus on healing.",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Tuna Mayonnaise Onigiri",
+            "bravo": "Red Salmon Onigiri",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Mushroom Mountain",
+            "bravo": "Bamboo Shoot Village",
+            "na": false,
+            "eu": false,
+            "jp": true
+        }
+    ]
+}

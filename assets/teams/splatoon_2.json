@@ -1,0 +1,386 @@
+{
+    "name": {
+        "en_us": "Splatoon 2",
+        "jp_jp": "スプラトゥーン2"
+    },
+    "teams": [
+        {
+            "alpha": "Cake",
+            "bravo": "Ice Cream",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Mayo",
+            "bravo": "Ketchup",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Flight",
+            "bravo": "Invisibility",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Vampire",
+            "bravo": "Werewolf",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Sci-Fi",
+            "bravo": "Fantasy",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Sweater",
+            "bravo": "Sock",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Action",
+            "bravo": "Comedy",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Money",
+            "bravo": "Love",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Chicken",
+            "bravo": "Egg",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Baseball",
+            "bravo": "Soccer",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Raph",
+            "bravo": "Leo",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Mikey",
+            "bravo": "Donnie",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Raph",
+            "bravo": "Donnie",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Pulp",
+            "bravo": "No-Pulp",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Squid",
+            "bravo": "Octopus",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Fork",
+            "bravo": "Spoon",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Retro",
+            "bravo": "Modern",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Trick",
+            "bravo": "Treat",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Salsa",
+            "bravo": "Guacamole",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Hero",
+            "bravo": "Villain",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Fam",
+            "bravo": "Friend",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Pancake",
+            "bravo": "Waffle",
+            "na": true,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Knight",
+            "bravo": "Wizard",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Hare",
+            "bravo": "Tortoise",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Unicorn",
+            "bravo": "Narwhal",
+            "na": true,
+            "eu": false,
+            "jp": false
+        },
+        {
+            "alpha": "Chaos",
+            "bravo": "Order",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Super Mushroom",
+            "bravo": "Super Star",
+            "na": true,
+            "eu": true,
+            "jp": true
+        },
+        {
+            "alpha": "Front Roll",
+            "bravo": "Back Roll",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Warm",
+            "bravo": "Cold",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Film",
+            "bravo": "Book",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Gherk-OUT",
+            "bravo": "Gherk-IN",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Salty",
+            "bravo": "Sweet",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Adventure",
+            "bravo": "Relax",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Eat It",
+            "bravo": "Save It",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Time Travel",
+            "bravo": "Teleporter",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Kid",
+            "bravo": "Grown-Up",
+            "na": false,
+            "eu": true,
+            "jp": false
+        },
+        {
+            "alpha": "Rock",
+            "bravo": "Pop",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Fries",
+            "bravo": "McNuggets",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Dexterity",
+            "bravo": "Endurance",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Lemon",
+            "bravo": "No Lemon",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Inner Wear",
+            "bravo": "Outer Wear",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Champion",
+            "bravo": "Challenger",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Hana",
+            "bravo": "Dango",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Newest",
+            "bravo": "Most Popular",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "New Lifeform",
+            "bravo": "Future Tech",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Hello Kitty",
+            "bravo": "Cinnamoroll",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "My Melody",
+            "bravo": "Pompompurin",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Hello Kitty",
+            "bravo": "My Melody",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Mushroom Mountain",
+            "bravo": "Bamboo Shoot Village",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Tsubuan",
+            "bravo": "Koshian",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Pocky Chocolate",
+            "bravo": "Pocky: Gokuboso",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Boke",
+            "bravo": "Tsukkomi",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "Ce",
+            "bravo": "Pa",
+            "na": false,
+            "eu": false,
+            "jp": true
+        },
+        {
+            "alpha": "No Pineapple",
+            "bravo": "Pineapple",
+            "na": false,
+            "eu": false,
+            "jp": true
+        }
+    ]
+}
