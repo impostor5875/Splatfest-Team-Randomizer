@@ -285,13 +285,6 @@
             "jp": true
         },
         {
-            "alpha": "Inner Wear",
-            "bravo": "Outer Wear",
-            "na": false,
-            "eu": false,
-            "jp": true
-        },
-        {
             "alpha": "Champion",
             "bravo": "Challenger",
             "na": false,
